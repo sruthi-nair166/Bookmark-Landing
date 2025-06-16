@@ -35,6 +35,22 @@ body {
   display: block;    
 }
 
+/* blue shapes */
+
+.blue-design-element {
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  z-index: -1;
+  height: 57vw;
+  width: 85vw;
+  top: 20%;
+}
+
+#design-1 {
+  right: -10vw;
+  border-radius: 150px 0 0 150px;
+} 
+
 #section-two-flex {
   display: flex;
   flex-direction: row;
@@ -42,4 +58,50 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+}
+
+#design-2 {
+  left: -12vw;
+  border-radius: 0 150px 150px 0;
+} 
+
+/* all the media queries for blue shapes */
+
+@media (min-width: 711px) {
+  #design-1 {
+    height: 57vw;
+    width: 84vw;
+    border-radius: 200px 0 0 200px;
+ }
+ #design-2 {
+    height: 55vw;
+    width: 88vw;
+    border-radius: 0 200px 200px 0;
+ }
+} 
+
+@media (min-width: 956px) {
+  #design-1 {
+    height: 28vw;
+    width: 45vw;
+    border-radius: 200px 0 0 200px;
+  }
+  #design-2 {
+    height: 26vw;
+    width: 47vw;
+    border-radius: 0 200px 200px 0;
+  }
+}
+
+@media (min-width: 1330px) {
+  #design-1 {
+    height: 372px;
+    width: 600px;
+    border-radius: 200px 0 0 200px;
+ }
+ #design-2 {
+    height: 350px;
+    width: 600px;
+    border-radius: 0 200px 200px 0;
+  }
 }
