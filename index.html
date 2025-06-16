@@ -14,8 +14,7 @@
   </head>
 
   <body>
-    <main>
-      <header>
+    <header>
         <img src="./images/logo-bookmark.svg" alt="logo"/>
 
         <nav>
@@ -24,16 +23,21 @@
           <a href="#">Contact</a>
           <button>Login</button>
         </nav>
-      </header>
+    </header>
+    <main>
+      <section id="section-one-flex">
+        <div class="image-wrapper">
+          <div></div>
+          <img src="./images/illustration-hero-cropped.svg" class="illustration" />
+        </div>
 
-      <section>
-        <img src="./images/illustration-hero.svg" class="illustration" />
+        <div class="para">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
 
-        <h1>A Simple Bookmark Manager</h1>
-        <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-
-        <button>Get it on Chrome</button>
-        <button>Get it on Firefox</button>
+          <button>Get it on Chrome</button>
+          <button>Get it on Firefox</button>
+        </div>
       </section>
 
       <section>
@@ -45,11 +49,20 @@
           <button>Speedy Searching</button>
           <button>Easy Sharing</button>
         </nav>
+        
+        <div id="section-two-flex">
+          <div class="image-wrapper">
+            <div></div>
+            <img src="./images/illustration-features-tab-1.svg" class="illustration" />
+          </div>
 
-        <img src="./images/illustration-features-tab-1.svg" class="illustration" />
+          <div class="para">
+            <h3>Bookmark in one click</h3>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
 
-        <h3>Bookmark in one click</h3>
-        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button>More Info</button>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -57,28 +70,32 @@
         <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
     got a favourite you’d like us to prioritize.</p>
 
-        <div>
-          <img src="./images/logo-chrome.svg" class="illustration"/>
-          <h3>Add to Chrome</h3>
-          <p>Minimum version 62</p>
-          <img src="./images/bg-dots.svg" class="illustration"/>
-          <button>Add & Install Extension</button>
-        </div>
+        <div id="extensions">
+          <div class="extension-container">
+            <img src="./images/logo-chrome.svg" />
+            <div>
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+            </div>
+            <img src="./images/bg-dots.svg" />
+            <button>Add & Install Extension</button>
+          </div>
 
-        <div>
-          <img src="./images/logo-firefox.svg" class="illustration"/>
-          <h3>Add to Chrome</h3>
-          <p>Minimum version 62</p>
-          <img src="./images/bg-dots.svg" class="illustration"/>
-          <button>Add & Install Extension</button>
-        </div>
+          <div class="extension-container">
+            <img src="./images/logo-firefox.svg" />
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <img src="./images/bg-dots.svg" />
+            <button>Add & Install Extension</button>
+          </div>
 
-        <div>
-          <img src="./images/logo-opera.svg" class="illustration"/>
-          <h3>Add to Chrome</h3>
-          <p>Minimum version 62</p>
-          <img src="./images/bg-dots.svg" class="illustration"/>
-          <button>Add & Install Extension</button>
+          <div class="extension-container">
+            <img src="./images/logo-opera.svg" />
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <img src="./images/bg-dots.svg" />
+            <button>Add & Install Extension</button>
+          </div>
         </div>
       </section>
 
@@ -87,10 +104,12 @@
         <p>Here are some of our FAQs. If you have any other questions you’d like 
     answered please feel free to email us.</p>
 
-        <button>What is Bookmark?</button>
-        <button>How can I request a new browser?</button>
-        <button>Is there a mobile app?</button>
-        <button>What about other Chromium browsers?</button>
+        <div>
+          <button>What is Bookmark?</button>
+          <button>How can I request a new browser?</button>
+          <button>Is there a mobile app?</button>
+          <button>What about other Chromium browsers?</button>
+        </div>
 
         <button>More Info</button>
 
@@ -102,8 +121,8 @@
 
         <label>
           <input type="email" placeholder="Enter your email address"/>
+          <button class="red">Contact Us</button>
         </label>
-        <button>Contact Us</button>
       </section>
 
       <section>

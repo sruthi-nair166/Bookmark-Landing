@@ -3,11 +3,42 @@
 }
 
 body {
-  margin: 5% 10%;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+/* applying flex layout to image and paragraph in first two sections */
+
+#section-one-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.image-wrapper, .para {
+  flex: 1 1 400px;
+  max-width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
 }
 
 .illustration {
   max-width: 100%;
   height: auto;
   display: block;    
+}
+
+#section-two-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
