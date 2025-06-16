@@ -1,11 +1,56 @@
 *, *::before, *::after {
   box-sizing: border-box;  
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --black: hsl(0, 0%, 17%);
+  --text: hsl(232, 7%, 57%);
 }
 
 body {
   margin: 2rem auto;
   max-width: 1200px;
   width: 90%;
+  overflow-x: hidden;
+}
+
+/* aligning text center/left */
+
+section {
+  text-align: center;
+}
+
+#section-two-flex .para button {
+  display: none;
+}
+
+@media (min-width: 956px) {
+  .para {
+    text-align: left;
+  }
+  #section-two-flex .para button {
+    display: block;
+  }
+}
+
+/* setting color, font size and font weight to text */
+
+p {
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+h2, h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black);
 }
 
 /* applying flex layout to image and paragraph in first two sections */
