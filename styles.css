@@ -5,8 +5,12 @@
 }
 
 :root {
+  --blue: hsl(231, 69%, 60%);
   --black: hsl(0, 0%, 17%);
   --text: hsl(232, 7%, 57%);
+  --red: hsl(0, 94%, 66%);
+  --grey: hsl(0, 0%, 95%);
+  --shadow: hsl(0, 0%, 88%);
 }
 
 body {
@@ -53,6 +57,31 @@ h2, h3 {
   color: var(--black);
 }
 
+/* styling the buttons */
+
+button {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--blue);
+  border-radius: 0.4rem;
+  color: hsl(0, 0%, 97%);
+  background-color: var(--blue);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.white {
+  margin-left: 1rem;
+  color: hsl(240, 1%, 53%);
+  background-color: var(--grey);
+  border: 1px solid var(--grey);
+  box-shadow: 0.5rem 0.5rem 0.7rem var(--shadow);
+}
+
+.red {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
 /* applying flex layout to image and paragraph in first two sections */
 
 #section-one-flex {
@@ -83,7 +112,7 @@ h2, h3 {
 /* blue shapes */
 
 .blue-design-element {
-  background-color: hsl(231, 69%, 60%);
+  background-color: var(--blue);
   position: absolute;
   z-index: -1;
   height: 57vw;
@@ -168,7 +197,8 @@ h2, h3 {
   align-items: center;
   justify-content: center;
   height: 400px;
-  border: 1px solid black;
+  border: 1px solid var(--grey);
+  box-shadow: 0.1rem 0.1rem 0.8rem var(--shadow);
 }
 
 #extensions > .extension-container:nth-child(2) {
@@ -177,4 +207,11 @@ h2, h3 {
 
 #extensions > .extension-container:nth-child(3) {
   align-self: end;
+}
+
+/* contact us section */
+
+input {
+  width: 30%;
+  padding: 0.7rem;
 }
