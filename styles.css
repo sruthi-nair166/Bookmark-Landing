@@ -20,6 +20,15 @@ body {
   overflow-x: hidden;
 }
 
+/* added flex layout to buttons in first section */
+
+.button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
 /* aligning text center/left */
 
 section {
@@ -36,6 +45,9 @@ section {
   }
   #section-two-flex .para button {
     display: block;
+  }
+  .button-wrap {
+    justify-content: start;
   }
 }
 
@@ -60,7 +72,7 @@ h2, h3 {
 /* styling the buttons */
 
 button {
-  padding: 0.8rem 1.5rem;
+  padding: 0.8em 1em;
   border: 1px solid var(--blue);
   border-radius: 0.4rem;
   color: hsl(0, 0%, 97%);
@@ -70,7 +82,6 @@ button {
 }
 
 .white {
-  margin-left: 1rem;
   color: hsl(240, 1%, 53%);
   background-color: var(--grey);
   border: 1px solid var(--grey);
@@ -212,6 +223,21 @@ button {
 /* contact us section */
 
 input {
-  width: 30%;
+  width: 20rem;
   padding: 0.7rem;
+}
+
+/* label input and contact us button flex layout */
+
+label {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 545px) {
+  label button {
+    width: 20rem;
+  }
 }
