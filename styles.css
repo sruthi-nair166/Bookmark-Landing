@@ -33,6 +33,26 @@ header, main {
   gap: 15px;
 }
 
+/* tabs styling */
+
+#tabs > :first-child {
+  border-top: 1px solid var(--text);
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: var(--text);
+  font-size: 18px;
+  border-bottom: 1px solid var(--text);
+  padding: 1.5em 0;
+}
+
+.section-2-tab {
+  width: 90%;
+}
+
 /* aligning text center/left */
 
 section {
@@ -52,6 +72,12 @@ section {
   }
   .button-wrap {
     justify-content: start;
+  }
+  .section-2-tab {
+    width: 15em;
+  }
+  #tabs > :first-child {
+    border-top: none;
   }
 }
 
@@ -83,6 +109,7 @@ button {
   background-color: var(--blue);
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .white {
@@ -222,6 +249,33 @@ button {
 
 #extensions > .extension-container:nth-child(3) {
   align-self: end;
+}
+
+/* faq section */
+
+#faqs {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq {
+  text-align: left;
+  color: var(--black);
+  font-weight: 450;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 833px) {
+  #faqs {
+    width: 50%;
+  }
 }
 
 /* contact us section */
