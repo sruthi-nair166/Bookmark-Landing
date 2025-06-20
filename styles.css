@@ -7,7 +7,7 @@
 
 :root {
   --blue: hsl(231, 69%, 60%);
-  --black: hsl(0, 0%, 17%);
+  --black: hsl(231, 32%, 21%);
   --text: hsl(232, 7%, 57%);
   --red: hsl(0, 94%, 66%);
   --grey: hsl(0, 0%, 95%);
@@ -22,6 +22,52 @@ header, main {
   margin: 2rem auto;
   max-width: 1200px;
   width: 90%;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+header > nav a {
+  color: var(--black);
+}
+
+/* bottom nav links */
+
+#nav-links {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#img-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#img-nav > nav a {
+  color: var(--grey);
+}
+
+#nav-links nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
 }
 
 /* added flex layout to buttons in first section */
@@ -78,6 +124,21 @@ section {
   }
   #tabs > :first-child {
     border-top: none;
+  }
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #img-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #nav-links nav {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -307,4 +368,16 @@ label {
   label button {
     width: 20rem;
   }
+}
+
+/* credits */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+    
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  text-transform: none;
 }
