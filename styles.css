@@ -24,6 +24,82 @@ header, main {
   width: 90%;
 }
 
+/* styling nav in mobile layout */
+
+@media (max-width: 955px) {
+  #header {
+    background-color: hsl(231, 32%, 21%, 0.9);
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 5;
+    position: fixed;
+    top: -2rem;
+    padding: 2rem;
+  } 
+
+  #header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #header nav a:first-child {
+    border-top: 1px solid var(--grey);
+  }
+
+  #header nav a {
+    color: var(--grey);
+    border-bottom: 1px solid var(--grey);
+    padding: 2em;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #header nav button {
+    width: 100%;
+    margin: 2em auto;
+    padding: 1.2em;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid var(--grey);
+  }
+} 
+
+header nav {
+  display: none;
+}
+
+/* applying flex to logo and hamburger icon */
+
+#top-logo-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-logo-nav > :nth-child(2) {
+  background: none;
+  border: none;
+}
+
+.icon-size {
+  height: 25px;
+}
+
+.logo-size {
+  height: 30px;
+}
+
+.arrow-size {
+  height: 15px;
+}
+
 a {
   text-transform: uppercase;
   text-decoration: none;
@@ -37,7 +113,7 @@ header > nav a {
 
 /* bottom nav links */
 
-#nav-links {
+#bottom-nav-links {
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -45,25 +121,25 @@ header > nav a {
   padding: 2rem;
 }
 
-#img-nav {
+#bottom-logo-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 
-#img-nav > nav a {
+#bottom-logo-nav > nav a {
   color: var(--grey);
 }
 
-#nav-links nav {
+#bottom-nav-links nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-#icons {
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,35 +186,52 @@ section {
 }
 
 @media (min-width: 956px) {
+  /* applying flex to wide screen layout */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* hiding hamburger icon */
+  #top-logo-nav > :nth-child(2) {
+    display: none;
+  }
+  /* stying nav elements */
+  header nav, #bottom-logo-nav nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
   .para {
     text-align: left;
   }
+  /* displaying more info button only on wide screen */
   #section-two-flex .para button {
     display: block;
   }
   .button-wrap {
     justify-content: start;
   }
+  /* tab buttons in section-two */
   .section-2-tab {
     width: 15em;
   }
   #tabs > :first-child {
     border-top: none;
   }
-  #nav-links {
+  /* nav links at the bottom */
+  #bottom-nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
-
-  #img-nav {
+  #bottom-logo-nav {
     display: flex;
     flex-direction: row;
-  }
-
-  #nav-links nav {
-    display: flex;
-    flex-direction: row;
+    gap: 3rem;
   }
 }
 
@@ -171,6 +264,10 @@ button {
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+}
+
+#section-one-flex .button-wrap button:first-child {
+  box-shadow: 0.5rem 0.5rem 0.7rem var(--shadow);
 }
 
 .white {

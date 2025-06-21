@@ -16,12 +16,18 @@
 
   <body>
     <header>
-        <img src="./images/logo-bookmark.svg" alt="logo"/>
+        <div id="top-logo-nav">
+          <img src="./images/logo-bookmark.svg" alt="logo" class="logo-size"/>
+          <button>
+            <img src="./images/icon-hamburger.svg" 
+               class="icon-size"/>
+          </button>
+        </div>
 
         <nav>
-          <a href="#">Features</a>
+          <a href="#features">Features</a>
           <a href="#">Pricing</a>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
           <button class="red">Login</button>
         </nav>
     </header>
@@ -110,22 +116,26 @@
         <div id="faq-container">
           <button class="tab faq">
             <span>What is Bookmark?</span>
-            <img src="./images/icon-arrow.svg" height="15px"/>
+            <img src="./images/icon-arrow.svg"
+                 class="arrow-size"/>
           </button>
 
           <button class="tab faq">
             <span>How can I request a new browser?</span>
-            <img src="./images/icon-arrow.svg" height="15px"/>
+            <img src="./images/icon-arrow.svg" 
+                 class="arrow-size"/>
           </button>
 
           <button class="tab faq">
             <span>Is there a mobile app?</span>
-            <img src="./images/icon-arrow.svg" height="15px"/>
+            <img src="./images/icon-arrow.svg" 
+                 class="arrow-size"/>
           </button>
 
           <button class="tab faq">
             <span>What about other Chromium browsers?</span>
-            <img src="./images/icon-arrow.svg" height="15px"/>
+            <img src="./images/icon-arrow.svg" 
+                 class="arrow-size"/>
           </button>
         </div>
 
@@ -145,9 +155,9 @@
         </label>
       </section>
 
-      <section id="nav-links">
-        <div id="img-nav">
-          <img src="./images/logo-bookmark-dark.svg" alt="logo" width="148px" />
+      <section id="bottom-nav-links">
+        <div id="bottom-logo-nav">
+          <img src="./images/logo-bookmark-dark.svg" alt="logo" class="logo-size"/>
 
           <nav>
             <a href="#features">Features</a>
@@ -156,9 +166,11 @@
           </nav>
         </div>
 
-        <div id="icons">
-          <img src="./images/icon-facebook.svg" width="24px" height="24px"/>
-          <img src="./images/icon-twitter.svg" width="24px" height="24px"/>
+        <div class="icons">
+          <img src="./images/icon-facebook.svg"
+               class="icon-size"/>
+          <img src="./images/icon-twitter.svg" 
+               class="icon-size"/>
         </div>
       </section>
 
