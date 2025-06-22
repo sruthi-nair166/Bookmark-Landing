@@ -70,6 +70,8 @@ header, main {
   }
 } 
 
+/* hiding nav by default on mobile screens */
+
 header nav {
   display: none;
 }
@@ -119,6 +121,7 @@ header > nav a {
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+  margin: 0;
 }
 
 #bottom-logo-nav {
@@ -179,6 +182,7 @@ header > nav a {
 
 section {
   text-align: center;
+  margin-top: 6.5rem;
 }
 
 #section-two-flex .para button {
@@ -214,6 +218,11 @@ section {
   .button-wrap {
     justify-content: start;
   }
+  /* paragraph width of features paragraph */
+  #features > p:first-of-type, #extension-download > p:first-of-type {
+    width: 30em;
+    margin: 1.5rem auto;
+  }
   /* tab buttons in section-two */
   .section-2-tab {
     width: 15em;
@@ -239,18 +248,22 @@ section {
 
 p {
   color: var(--text);
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 600;
   color: var(--black);
+  margin-bottom: 2rem;
 }
 
 h2, h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--black);
+  margin-bottom: 1.5rem;
 }
 
 /* styling the buttons */
@@ -331,7 +344,8 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
+  margin-top: 3rem;
 }
 
 #design-2 {
@@ -401,6 +415,23 @@ button {
   box-shadow: 0.1rem 0.1rem 0.8rem var(--shadow);
 }
 
+.extension-logo {
+  margin: 2rem;
+}
+
+.dots {
+  width: 100%;  
+}
+
+.extension-container p {
+  margin-top: -1rem;
+}
+
+.extension-container button {
+  width: 80%;
+  margin-top: 1.5rem;
+}
+
 #extensions > .extension-container:nth-child(2) {
   align-self: center;
 }
@@ -413,13 +444,14 @@ button {
 
 #faqs {
   width: 90%;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 #faq-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .faq {
@@ -440,7 +472,7 @@ button {
 
 #contact {
   background-color: var(--blue);
-  padding: 50px;
+  padding: 4rem 2rem;
 }
 
 #contact p, #contact h2 {
@@ -461,7 +493,7 @@ label {
   gap: 15px;
 }
 
-@media (max-width: 545px) {
+@media (max-width: 567px) {
   label button {
     width: 20rem;
   }
@@ -472,6 +504,7 @@ label {
 .attribution { 
   font-size: 11px; 
   text-align: center; 
+  margin: 0.1rem;
 }
     
 .attribution a { 
