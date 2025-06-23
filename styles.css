@@ -15,7 +15,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 header, main {
@@ -26,7 +26,7 @@ header, main {
 
 /* styling nav in mobile layout */
 
-@media (max-width: 955px) {
+@media (max-width: 971px) {
   #header {
     background-color: hsl(231, 32%, 21%, 0.9);
     height: 100%;
@@ -78,6 +78,12 @@ header, main {
     color: var(--black);
   }
 } 
+
+/* hiding nav by default on mobile screens */
+
+header nav {
+  display: none;
+}
 
 /* applying flex to logo and hamburger icon */
 
@@ -207,7 +213,7 @@ section {
   display: none;
 }
 
-@media (min-width: 956px) {
+@media (min-width: 971px) {
   /* applying flex to wide screen layout */
   header {
     display: flex;
@@ -416,7 +422,7 @@ button:hover {
  }
 } 
 
-@media (min-width: 956px) {
+@media (min-width: 971px) {
   #design-1 {
     height: 26vw;
     width: 45vw;
