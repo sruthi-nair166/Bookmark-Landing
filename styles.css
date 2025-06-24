@@ -76,6 +76,7 @@ header, main {
   #header nav button:hover {
     background-color: var(--grey);
     color: var(--black);
+    outline: none;
   }
 } 
 
