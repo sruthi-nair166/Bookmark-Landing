@@ -185,6 +185,23 @@ header > nav a {
 
 /* shared between section-two tabs and faq 'tabs' */
 
+#tabs .selected {
+  position: relative;
+}
+
+/* red underline for selected tab */
+
+#tabs .selected::after {
+  content: "";
+  position: absolute;
+  width: 15em;
+  height: 7px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--red);
+}
+
 .tab {
   background: none;
   border: none;
@@ -254,6 +271,12 @@ section {
   }
   #tabs > :first-child {
     border-top: none;
+  }
+  /* red underline for selected tab */
+  #tabs .selected::after {
+    content: "";
+    left: 0;
+    transform: none;
   }
   /* nav links at the bottom */
   #bottom-nav-links {
