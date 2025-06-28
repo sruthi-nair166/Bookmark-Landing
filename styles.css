@@ -183,8 +183,6 @@ header > nav a {
   border-top: 1px solid var(--text);
 }
 
-/* shared between section-two tabs and faq 'tabs' */
-
 #tabs .selected {
   position: relative;
 }
@@ -202,13 +200,14 @@ header > nav a {
   background-color: var(--red);
 }
 
+/* shared between section-two tabs and faq 'tabs' */
+
 .tab {
   background: none;
   border: none;
   border-radius: 0;
   color: var(--text);
   font-size: 18px;
-  border-bottom: 1px solid var(--text);
   padding: 1.5em 0;
 }
 
@@ -218,6 +217,7 @@ header > nav a {
 
 .section-2-tab {
   width: 90%;
+  border-bottom: 1px solid var(--text);
 }
 
 /* aligning text center/left */
@@ -538,6 +538,20 @@ button:hover {
   font-weight: 450;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.faq-answer {
+  text-align: left;
+  display: none;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+.bottom-border {
+  border-bottom: 1px solid var(--text);
 }
 
 @media (min-width: 833px) {

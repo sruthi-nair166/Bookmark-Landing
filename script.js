@@ -7,6 +7,7 @@ const tabBtns = document.querySelectorAll("#tabs button");
 const img = document.querySelector("#section-two-flex .image-wrapper img");
 const heading = document.querySelector("#section-two-flex .para h3");
 const paragraph = document.querySelector("#section-two-flex .para p");
+const faqs = document.querySelectorAll("#faq-container button");
 
 /* fucntionality top nav menu in mobile layout */
 
@@ -69,3 +70,12 @@ tabBtns.forEach(tab =>
                        
     }
 }));
+
+/* faq section */
+
+faqs.forEach(btn => {
+    btn.addEventListener("click", event => {
+        const answer = event.currentTarget.nextElementSibling;
+        answer.classList.toggle("open");
+    })
+})
