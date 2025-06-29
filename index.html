@@ -183,9 +183,13 @@
         <p>35,000+ already joined</p>
         <h2>Stay up-to-date with what we’re doing</h2>
 
-        <label>
-          <input type="email" placeholder="Enter your email address"/>
-          <button class="red">Contact Us</button>
+        <label for="email">
+          <div class="wrapper">
+            <input id="email" type="email" name="email"
+                   placeholder="Enter your email address"/>
+            <img src="./images/icon-error.svg" class="icon-size"/>
+          </div>
+          <button class="red" id="submit">Contact Us</button>
         </label>
       </section>
 

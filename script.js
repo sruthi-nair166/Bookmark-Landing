@@ -8,6 +8,10 @@ const img = document.querySelector("#section-two-flex .image-wrapper img");
 const heading = document.querySelector("#section-two-flex .para h3");
 const paragraph = document.querySelector("#section-two-flex .para p");
 const faqs = document.querySelectorAll("#faq-container button");
+const inputWrapper = document.querySelector(".wrapper");
+const input = document.getElementById("email");
+const submitBtn = document.getElementById("submit");
+const error = document.querySelector(".wrapper img");
 
 /* fucntionality top nav menu in mobile layout */
 
@@ -78,4 +82,31 @@ faqs.forEach(btn => {
         const answer = event.currentTarget.nextElementSibling;
         answer.classList.toggle("open");
     })
-})
+});
+
+/* input check */
+
+submitBtn.addEventListener("click", () => {
+
+    if(!input.checkValidity()) {
+        error.style.display = "block";
+
+        if(!inputWrapper.querySelector(".error-msg")) {
+            const msg = document.createElement("div");
+            msg.classList.add("error-msg");
+            msg.textContent = "Whoops, make sure it's an email";
+            inputWrapper.appendChild(msg);
+        }
+
+        input.classList.add("error");
+
+    } else {
+        error.style.display = "none";
+        input.classList.remove("error");
+        
+        const existingMsg = inputWrapper.querySelector(".error-msg");
+        if(existingMsg) existingMsg.remove();
+    }
+
+    input.value = "";
+});
