@@ -583,6 +583,8 @@ input {
   
 }
 
+/* error icon */
+
 .wrapper img {
   position: absolute;
   right: 12px;
@@ -634,6 +636,7 @@ label {
     padding: 5px 10px;
     border-radius: 0 0 0.4rem 0.4rem;
   }
+  /* error icon */
   .wrapper img {
     position: absolute;
     right: 12px;
