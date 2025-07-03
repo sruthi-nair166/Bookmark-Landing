@@ -35,11 +35,12 @@ Users should be able to:
 
 #### Mobile View
 
-![Mobile Screenshot](./Screenshots/frontend-mentor-bookmark-landing-page-mobile.png)
+<img src="./Screenshots/frontend-mentor-bookmark-landing-page-mobile.png" width="600" alt="Desktop Screenshot" />
+<br/>
 
 #### Desktop View
 
-![Desktop Screenshot](./Screenshots/frontend-mentor-bookmark-landing-page-desktop.png)
+<img src="./Screenshots/frontend-mentor-bookmark-landing-page-desktop.png" width="300" alt="Mobile Screenshot" />
 
 
 ### Links
