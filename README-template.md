@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark Landing Page
 
-This is my solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158).
+[This](https://sruthi-nair166.github.io/Bookmark-Landing/) is my solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158).
 
 
 ## Table of contents
