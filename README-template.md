@@ -36,7 +36,6 @@ Users should be able to:
 #### Mobile View
 
 <img src="./Screenshots/frontend-mentor-bookmark-landing-page-mobile.png" width="600" alt="Desktop Screenshot" />
-<br/>
 
 #### Desktop View
 
