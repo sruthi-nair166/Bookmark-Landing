@@ -97,6 +97,7 @@ I want to continue refining:
 
 - Github - [@sruthi-nair166](https://github.com/sruthi-nair166)
 - Frontend Mentor - [@sruthi-nair166](https://www.frontendmentor.io/profile/sruthi-nair166)
+- Linkedin - [Sruthi V Nair](https://www.linkedin.com/in/sruthi-v-nair/)
 
 
 
