@@ -20,6 +20,8 @@
 
 ## Overview
 
+A responsive marketing landing page built as part of the Frontend Mentor challenge, with a strong focus on accurate UI implementation, responsive layouts, and accessible markup. The project closely follows a provided design and simulates a real-world front-end workflow where design fidelity and usability are key.
+
 ### The challenge
 
 Users should be able to:
@@ -50,6 +52,9 @@ Users should be able to:
 
 
 ## My process
+
+- Implemented the layout using a mobile-first approach, ensuring consistency across breakpoints
+- Paid close attention to spacing, alignment, and component structure to match the design as closely as possible
 
 ### Built with
 
